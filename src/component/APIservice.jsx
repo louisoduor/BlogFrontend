@@ -1,6 +1,6 @@
 export default class APIService {
     static UpdateArticle(id, body) {
-        return fetch(`http://127.0.0.1:5000/update/${id}/`, {
+        return fetch(`https://vercel.com/ngigi1234s-projects/blogbackend45/8YDEy1YV7aW5qaJuVdqMt1AbqFJq/update/${id}/`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -11,7 +11,7 @@ export default class APIService {
     }
 
     static InsertArticle(body) {
-        return fetch(`https://front-tan-xi.vercel.app/add`, {
+        return fetch(`https://vercel.com/ngigi1234s-projects/blogbackend45/8YDEy1YV7aW5qaJuVdqMt1AbqFJq/add`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ export default class APIService {
     
 
     static DeleteArticle(id) {
-        return fetch(`http://127.0.0.1:5000/delete/${id}/`, {
+        return fetch(`https://vercel.com/ngigi1234s-projects/blogbackend45/8YDEy1YV7aW5qaJuVdqMt1AbqFJq/${id}/`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
