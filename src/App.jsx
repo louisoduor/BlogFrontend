@@ -429,9 +429,7 @@
 
 
 
-
-import React, { useState } from 'react';
-// import axios from 'axios';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './component/Header';
 import AboutPage from './component/AboutPage';
@@ -439,46 +437,34 @@ import Footer from './component/footer';
 import { DevelopersPage } from './component/DevelopersPage';
 import { Home } from './component/Home';
 import BlogPage from './component/BlogPage';
-import Authentication from './Authentication';
 import Profile from './component/Profile';
 
 function App() {
-    const [authenticated, setAuthenticated] = useState(false);
-
-    function handleAuthenticated() {
-        setAuthenticated(true);
-    }
-
     return (
         <BrowserRouter>
             <div className="container mx-auto px-4">
             </div>
 
-            {authenticated ? (
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <HomePage/>
-                    <Routes>
-                        <Route exact path="/" element={<Home />} />
-                        <Route exact path="/about" element={<AboutPage />} />
-                        <Route exact path="/blog" element={<BlogPage />} />
-                        <Route exact path="/developer" element={<DevelopersPage />} />
-                        <Route path="/profile" element={<Profile />} />
-                      
-                    </Routes>
-                    <Footer />
-                </div>
-            ) : (
-                <Authentication onAuthenticated={handleAuthenticated} />
-            )}
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <HomePage/>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/about" element={<AboutPage />} />
+                    <Route exact path="/blog" element={<BlogPage />} />
+                    <Route exact path="/developer" element={<DevelopersPage />} />
+                    <Route path="/profile" element={<Profile />} />
+                </Routes>
+                <Footer />
+            </div>
 
             <div className=''>
-          
             </div>
         </BrowserRouter>
     );
 }
 
 export default App;
+
 
 
 
