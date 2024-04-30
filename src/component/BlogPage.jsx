@@ -8,7 +8,7 @@ const BlogPage = () => {
     const [editedArticle, setEditedArticle] = useState(null);
   
     useEffect(() => {
-      fetch('blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/Articles', {
+      fetch('blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/get/Articles', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'

@@ -11,7 +11,7 @@ export default class APIService {
     }
 
     static InsertArticle(body) {
-        return fetch(` blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/add/Articles`, {
+        return fetch(`blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/add/Articles`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
