@@ -1,6 +1,6 @@
 export default class APIService {
     static UpdateArticle(id, body) {
-        return fetch(`https://vercel.com/ngigi1234s-projects/blogbackend45/8YDEy1YV7aW5qaJuVdqMt1AbqFJq/update/Articles${id}/`, {
+        return fetch(`blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/update/Articles${id}/`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -11,7 +11,7 @@ export default class APIService {
     }
 
     static InsertArticle(body) {
-        return fetch(` https://vercel.com/ngigi1234s-projects/blogbackend45/8YDEy1YV7aW5qaJuVdqMt1AbqFJq/add/Articles`, {
+        return fetch(` blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/add/Articles`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -29,9 +29,10 @@ export default class APIService {
         });
     }
     
+    
 
     static DeleteArticle(id) {
-        return fetch(`https://vercel.com/ngigi1234s-projects/blogbackend45/8YDEy1YV7aW5qaJuVdqMt1AbqFJq/delete/Articles${id}/`, {
+        return fetch(`blogbackend45-5lah89x8c-ngigi1234s-projects.vercel.app/delete/Articles${id}/`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
