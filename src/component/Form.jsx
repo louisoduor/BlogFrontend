@@ -19,7 +19,7 @@ function Form(props) {
     APIService.UpdateArticle(props.article.id, { title, body })
       .then((resp) => {
         props.updatedData(resp);
-        clearFields(); // Clear fields after successful update
+        clearFields(); 
       })
       .catch((error) => console.log(error));
   };
@@ -28,7 +28,7 @@ function Form(props) {
     APIService.InsertArticle({ title, body })
       .then((resp) => {
         props.insertedArticle(resp);
-        clearFields(); // Clear fields after successful insertion
+        clearFields(); 
       })
       .catch((error) => console.error('Error inserting article:', error));
   };
